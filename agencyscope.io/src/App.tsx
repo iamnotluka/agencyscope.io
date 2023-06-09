@@ -6,7 +6,7 @@ import AgencyScopePortal from './components/AgencyScopePortal';
 
 const App = () => {
   const loggedIn: boolean = true;
-  {!loggedIn ? <LoginPage/> : <AgencyScopePortal/>}
+  {return !loggedIn ? <LoginPage/> : <AgencyScopePortal/>}
 }
 
 export default App;
